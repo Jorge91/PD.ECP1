@@ -1,10 +1,11 @@
 package command.calculator;
 
-import es.upm.miw.pd.command.calculator.solution.PrintCommand;
-import es.upm.miw.pd.command.calculator.solution.ResetCommand;
-import es.upm.miw.pd.command.calculator.solution.SubtractCommand;
-import es.upm.miw.pd.command.calculator.solution.AddCommand;
+import command.calculator.PrintCommand;
+import command.calculator.ResetCommand;
+import command.calculator.SubtractCommand;
 import upm.jbb.IO;
+import command.calculator.AddCommand;
+
 
 public class MainCalculator {
     private CommandManager commandManager;
