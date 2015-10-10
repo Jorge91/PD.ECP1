@@ -1,0 +1,20 @@
+package memento.calculator;
+
+public class Memento {
+	private int value;
+
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}
+
+	public Memento(int value) {
+		super();
+		this.value = value;
+	}
+	
+	
+}
