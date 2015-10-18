@@ -1,11 +1,10 @@
 package visitor.figure;
 
-public class Square extends Figure {
+public class Square implements Figure {
 
     private double side;
 
     public Square(String description, double side) {
-        super(description);
         this.side = side;
     }
 
@@ -23,5 +22,12 @@ public class Square extends Figure {
     public String toString() {
         return super.toString();
     }
+
+	@Override
+	public void accept(Visitor v) {
+	    v.visitSquare(this);
+	    
+		
+	}
 
 }

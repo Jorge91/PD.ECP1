@@ -1,12 +1,11 @@
 package visitor.figure;
 
-public class Triangle extends Figure {
+public class Triangle implements Figure {
     private double base;
 
     private double height;
 
     public Triangle(String description, double base, double height) {
-        super(description);
         this.base = base;
         this.height = height;
     }
@@ -25,5 +24,11 @@ public class Triangle extends Figure {
     public String toString() {
         return super.toString();
     }
+
+	@Override
+	public void accept(Visitor v) {
+		v.visitTriangle(this);
+		
+	}
 
 }

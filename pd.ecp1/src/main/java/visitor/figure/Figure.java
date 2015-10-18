@@ -1,9 +1,10 @@
 package visitor.figure;
 
-public abstract class Figure {
+import visitor.figure.Visitor;
 
-    public Figure(String description) {
-    }
+public interface Figure {
+
+	void accept(Visitor v);
     
     public abstract double area();
     public abstract double numberOfSides();
