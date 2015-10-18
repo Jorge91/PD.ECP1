@@ -7,10 +7,10 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
-import es.upm.miw.pd.text.solution.Componente;
-import es.upm.miw.pd.text.solution.FactoriaCaracter;
-import es.upm.miw.pd.text.solution.Parrafo;
-import es.upm.miw.pd.text.solution.Texto;
+import text.Escrito;
+import text.FactoriaCaracter;
+import text.Parrafo;
+import text.Texto;
 
 public class TextoTest {
     private Componente H, o, l, a, pf, txt;
