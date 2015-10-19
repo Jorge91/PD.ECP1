@@ -1,16 +1,13 @@
 package memento.calculator;
 
-import upm.jbb.IO;
-
 public class SaveCommand extends ComandoAbstract {
 
-	public SaveCommand(Calculator calculator) {
+	public SaveCommand(CalculatorMementable calculator) {
 		super(calculator);
 	}
 
 	public void execute() {
-		
-		
+		((CalculatorMementable) this.calculator).save(this.calculator.getTotal());	
 	}
 
 	public String name() {

@@ -7,6 +7,10 @@ public class Originador implements Mementable {
 		return new Memento(this.value);
 	}
 
+	public void set(int value) {
+        this.value = value;
+    }
+	
 	public void restoreMemento(Memento memento) {
 		this.value = memento.getValue();
 	}
