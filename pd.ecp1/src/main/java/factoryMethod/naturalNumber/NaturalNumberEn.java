@@ -1,5 +1,10 @@
 package factoryMethod.naturalNumber;
 
-public class NaturalNumberEn {
+public class NaturalNumberEn extends NaturalNumber {
+
+    public NaturalNumberEn(int value) {
+		super(value);
+		this.textValue = new String [] {"zero", "one", "two", "three", "four", "five"};
+    }
 
 }
