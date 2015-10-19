@@ -7,11 +7,11 @@ import upm.jbb.IO;
 import memento.calculator.AddCommand;
 
 
-public class MainCalculator {
+public class MainCalculatorMementable {
     private CommandManager commandManager;
 
-    public MainCalculator() {
-        Calculator calculator = new CalculatorMementable();
+    public MainCalculatorMementable() {
+        CalculatorMementable calculator = new CalculatorMementable();
         this.commandManager = new CommandManager();
         this.commandManager.add(new AddCommand(calculator));
         this.commandManager.add(new SubtractCommand(calculator));
@@ -25,6 +25,6 @@ public class MainCalculator {
     }
 
     public static void main(String[] args) {
-        IO.getIO().addView(new MainCalculator());
+        IO.getIO().addView(new MainCalculatorMementable());
     }
 }
